@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Salary Calculator</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Calcular</string>
+    <string name="previous">Voltar</string>
+    <string name="salario_bruto">Salário Bruto R$</string>
+    <string name="numero_dependentes">Número de Dependentes</string>
+    <string name="outros_descontos">Outros Descontos R$</string>
+    <string name="salario_liquido">Salário Líquido</string>
+
+
+    <string name="hello_first_fragment">Calculadora de Salário Líquido</string>
+    <string name="hello_second_fragment">Resultado</string>
+</resources>
