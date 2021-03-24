@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         txtSalarioBruto = findViewById(R.id.textSalarioBruto);
         txtNumeroDepedentes = findViewById(R.id.textNumeroDependentes);
         txtOutrosDescontos = findViewById(R.id.textOutrosDescontos);
-        txtResultado = findViewById(R.id.txtResultado);
         btnCalcular = findViewById(R.id.button_first);
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {

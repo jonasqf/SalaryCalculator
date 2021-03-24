@@ -1,5 +1,7 @@
 package com.example.salarycalculator;
 
+import java.text.DecimalFormat;
+
 public class CalcularSalarioCLT {
     private float salarioBruto=0;
     private float outrosDescontos=0;
@@ -8,7 +10,7 @@ public class CalcularSalarioCLT {
     private float IRRF = 0;
     private float salarioLiquido =0;
     private float totalDescontos =0;
-
+    private static DecimalFormat df = new DecimalFormat("0.00");
 
     public void calcularSalario (float salarioBruto, float outrosDescontos, int numeroDependentes ) {
         this.salarioBruto = salarioBruto;
@@ -32,7 +34,7 @@ public class CalcularSalarioCLT {
             INSS = salarioBruto * (float) 0.14 - (float) 141.05;
         }
 
-        return INSS;
+        return Float.parseFloat(df.format(INSS));
     }
 
     private float calculaIRRF (float salarioBruto, float INSS, int numeroDependentes) {
@@ -50,21 +52,21 @@ public class CalcularSalarioCLT {
         } else {
             IRRF = base * (float) 0.275 - (float) 869.36;
         }
-        return IRRF;
+        return Float.parseFloat(df.format(IRRF));
     }
 
     private float calculaSalarioLiquido () {
 
         float liquido = this.salarioBruto - this.INSS - this.IRRF - this.outrosDescontos;
 
-        return liquido;
+        return Float.parseFloat(df.format(liquido));
     }
 
     private float calculaDescontos () {
 
         float descontos = ((this.INSS + this.IRRF + this.outrosDescontos) / this.salarioBruto)*100;
 
-        return descontos;
+        return Float.parseFloat(df.format(descontos));
     }
 
     public float getSalarioBruto() {

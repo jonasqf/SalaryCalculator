@@ -40,6 +40,7 @@
         android:layout_marginRight="150dp"
         android:layout_marginBottom="550dp"
         android:autoText="true"
+        android:gravity="center"
         android:text="@string/hello_second_fragment"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -50,7 +51,7 @@
 
     <TextView
         android:id="@+id/txtViewSalarioLiquido"
-        android:layout_width="108dp"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -60,10 +61,13 @@
         android:layout_marginStart="222dp"
         android:layout_marginLeft="222dp"
         android:layout_marginTop="19dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
         android:layout_marginBottom="301dp"
+        android:gravity="right"
+        android:numeric="decimal"
         android:text="teste"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,11 +82,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="260dp"
-        android:layout_marginRight="260dp"
-        android:layout_marginBottom="527dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginRight="239dp"
+        android:layout_marginBottom="529dp"
         android:text="@string/salario_bruto" />
 
     <TextView
@@ -99,39 +103,49 @@
 
     <TextView
         android:id="@+id/txtValorINSS"
-        android:layout_width="wrap_content"
+        android:layout_width="99dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="163dp"
-        android:layout_marginRight="163dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
         android:layout_marginBottom="470dp"
-        android:text="INSS" />
+        android:gravity="right"
+        android:inputType="numberDecimal"
+        android:numeric="decimal"
+        android:text="INSS"
+        android:textColor="#EC0303" />
 
     <TextView
         android:id="@+id/txtValorIRRF"
-        android:layout_width="wrap_content"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="163dp"
-        android:layout_marginRight="163dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
         android:layout_marginBottom="414dp"
-        android:text="IRRF" />
+        android:gravity="right"
+        android:inputType="numberDecimal"
+        android:numeric="decimal"
+        android:text="IRRF"
+        android:textColor="#F10202" />
 
     <TextView
         android:id="@+id/txtValorOutrosDescontos"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
         android:layout_marginBottom="358dp"
-        android:text="@string/outros_descontos" />
+        android:gravity="right"
+        android:text="DEscontos"
+        android:textColor="#F10606" />
 
     <TextView
         android:id="@+id/txtIRRF"
@@ -152,8 +166,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="251dp"
-        android:layout_marginRight="251dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
         android:layout_marginBottom="358dp"
         android:text="@string/outros_descontos" />
 
@@ -167,6 +181,7 @@
         android:layout_marginEnd="94dp"
         android:layout_marginRight="94dp"
         android:layout_marginBottom="530dp"
+        android:gravity="left"
         android:text="@string/salario_bruto" />
 
     <TextView
@@ -179,19 +194,23 @@
         android:layout_marginEnd="256dp"
         android:layout_marginRight="256dp"
         android:layout_marginBottom="301dp"
-        android:text="@string/salario_liquido" />
+        android:text="@string/salario_liquido"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/txtValorDescontos"
-        android:layout_width="wrap_content"
+        android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="133dp"
-        android:layout_marginRight="133dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
         android:layout_marginBottom="260dp"
-        android:text="descontos" />
+        android:gravity="right"
+        android:numeric="decimal"
+        android:text="descontos"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/txtDescontos"
@@ -203,6 +222,20 @@
         android:layout_marginEnd="259dp"
         android:layout_marginRight="259dp"
         android:layout_marginBottom="258dp"
-        android:text="Descontos" />
+        android:text="Descontos"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="260dp"
+        android:gravity="left"
+        android:text="%" />
 
 </RelativeLayout>
