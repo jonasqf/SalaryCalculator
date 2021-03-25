@@ -30,8 +30,10 @@ public class CalcularSalarioCLT {
             INSS = salarioBruto * (float) 0.09 - (float) 15.67;
         } else if (salarioBruto <= 3134.40) {
             INSS = salarioBruto * (float) 0.12 - (float) 78.36;
-        } else {
+        } else if (salarioBruto <= 6101.06) {
             INSS = salarioBruto * (float) 0.14 - (float) 141.05;
+        }else {
+            INSS =  (float) 713.10;
         }
 
         return Float.parseFloat(df.format(INSS));
